@@ -9,9 +9,9 @@
   <div class = "container">
     <div class="jumbotron">
       <h1 class="display-4">Catalogo de Clientes</h1>
-      <p class="lead">Aplicación de muestra del catálogo de clientes</p>
+      <p class="lead">Aplicaci�n de muestra del cat�logo de clientes</p>
       <hr class="my-4">
-      <p>PHP aplicación de muestra conectada a una base de datos MySQL para enumerar un catálogo de clientes</p>
+      <p>PHP aplicaci�n de muestra conectada a una base de datos MySQL para enumerar un cat�logo de clientes</p>
     </div>
     <table class="table table-striped table-responsive">
       <thead>
@@ -30,7 +30,7 @@
 
         $conexion = mysqli_connect(getenv('MYSQL_HOST'), getenv('MYSQL_USER'), getenv('MYSQL_PASSWORD'), "BD");
 
-        $cadenaSQL = "select * from s_customer";
+        $cadenaSQL = "select * from n-cliente";
         $resultado = mysqli_query($conexion, $cadenaSQL);
 
         while ($fila = mysqli_fetch_object($resultado)) {
