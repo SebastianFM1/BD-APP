@@ -1,8 +1,6 @@
 CREATE SCHEMA IF NOT EXISTS BASEDATOS;
 USE BASEDATOS;
 
-DROP TABLE IF EXISTS agenda;
-
 CREATE TABLE distrito
  (codigodis                  VARCHAR(3) NOT NULL,
  nombre                      VARCHAR(45) NOT NULL,
@@ -24,6 +22,7 @@ CREATE TABLE agenda
         FOREIGN KEY (codigodist)
         REFERENCES distrito(codigodis))
  );
+
 
 CREATE TABLE distrito
  (codigodis                  VARCHAR(3) NOT NULL,
