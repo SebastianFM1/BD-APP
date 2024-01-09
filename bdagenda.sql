@@ -30,8 +30,6 @@ INSERT INTO agenda VALUES ('7', 'octavio', 'baldarrago','av.galvez 874',
 '043584736', '941747485','octavio585@hotmail.com', 'octavio baldarrago');
 INSERT INTO agenda VALUES ('8', 'angela', 'suarez','av.pardo 1894',
 '043252526', '941741212','angela_humilde@hotmail.com', 'angela suarez');
-INSERT INTO agenda VALUES ('8', 'angela', 'suarez','av.pardo 1894',
-'043252526', '941741212','angela_humilde@hotmail.com', 'angela suarez');
 INSERT INTO agenda VALUES ('9', 'antonhy', 'orbegozo','av.palmeras 456',
 '043151919', '942321212','antonhyelgozo@hotmail.com', 'antonhy orbegozo');
 INSERT INTO agenda VALUES ('10', 'giancarlo', 'sarrin','av.huaraz 123',
