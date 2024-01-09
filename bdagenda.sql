@@ -23,13 +23,6 @@ CREATE TABLE agenda
         REFERENCES distrito(codigodis))
  );
 
-
-CREATE TABLE distrito
- (codigodis                  VARCHAR(3) NOT NULL,
- nombre                      VARCHAR(45) NOT NULL,
-  CONSTRAINT distrito_codigo_per_pk PRIMARY KEY (codigodis))
- );
-
 INSERT INTO distrito VALUES ('1','Nuevo Chimbote');
 INSERT INTO distrito VALUES ('2','Chimbote');
 
