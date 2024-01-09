@@ -2,6 +2,13 @@ CREATE SCHEMA IF NOT EXISTS BASEDATOS;
 USE BASEDATOS;
 
 DROP TABLE IF EXISTS agenda;
+
+CREATE TABLE distrito
+ (codigodis                  VARCHAR(3) NOT NULL,
+ nombre                      VARCHAR(45) NOT NULL,
+  CONSTRAINT distrito_codigo_per_pk PRIMARY KEY (codigodis))
+ );
+
 CREATE TABLE agenda
  (codigoper                  VARCHAR(3)  NOT NULL,
   nombre                     VARCHAR(45) NOT NULL,
@@ -11,8 +18,21 @@ CREATE TABLE agenda
   telefmovi                  VARCHAR(9),
   email                      VARCHAR(30),
   fbc                        VARCHAR(30),
-  CONSTRAINT agenda_codigo_per_pk PRIMARY KEY (codigoper))
+  codigodist                 VARCHAR(3) NOT NULL,
+  CONSTRAINT agenda_codigo_per_pk PRIMARY KEY (codigoper)
+ CONSTRAINT fk_codigodist
+        FOREIGN KEY (codigodist)
+        REFERENCES distrito(codigodis))
  );
+
+CREATE TABLE distrito
+ (codigodis                  VARCHAR(3) NOT NULL,
+ nombre                      VARCHAR(45) NOT NULL,
+  CONSTRAINT distrito_codigo_per_pk PRIMARY KEY (codigodis))
+ );
+
+INSERT INTO distrito VALUES ('1','Nuevo Chimbote');
+INSERT INTO distrito VALUES ('2','Chimbote');
 
 INSERT INTO agenda VALUES ('1', 'carlos', 'serna','av. palmeras 145',
 '043524875', '942587568','carlos@hotmail.com', 'carlos serna');
