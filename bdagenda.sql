@@ -5,7 +5,7 @@ USE BASEDATOS;
 CREATE TABLE distrito
  (codigodis                  VARCHAR(3) NOT NULL,
  nombre                      VARCHAR(45) NOT NULL,
-  CONSTRAINT distrito_codigo_per_pk PRIMARY KEY (codigodis))
+  CONSTRAINT distrito_codigo_per_pk PRIMARY KEY (codigodis)
  );
 
 CREATE TABLE agenda
