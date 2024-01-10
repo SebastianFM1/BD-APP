@@ -21,7 +21,7 @@ CREATE TABLE agenda
  CONSTRAINT agenda_codigo_per_pk PRIMARY KEY (codigoper)
  CONSTRAINT fk_codigodist
         FOREIGN KEY (codigodist)
-        REFERENCES distrito(codigodis))
+        REFERENCES distrito(codigodis)
  );
 
 INSERT INTO distrito VALUES ('1','Nuevo Chimbote');
