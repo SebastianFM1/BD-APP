@@ -18,7 +18,7 @@ CREATE TABLE agenda
   email                      VARCHAR(30),
   fbc                        VARCHAR(30),
   codigodist                 VARCHAR(3) NOT NULL,
- CONSTRAINT agenda_codigo_per_pk PRIMARY KEY (codigoper)
+ CONSTRAINT agenda_codigo_per_pk PRIMARY KEY (codigoper),
  CONSTRAINT fk_codigodist
         FOREIGN KEY (codigodist)
         REFERENCES distrito(codigodis)
